@@ -18,6 +18,7 @@ function mainSlider() {
 
 $(document).ready(function() {
     mainSlider()
+    cartCalc()
 
     $(".header__burger").click(function() {
         $(".header__menu2").addClass("header__menu2--active")
@@ -43,3 +44,20 @@ $(document).ready(function() {
     });
 
 })
+
+function cartCalc() {
+    $('.cartcalc .ccalc-minus').click(function() {
+        let a = $(this).closest('.cartcalc').find('input').val();
+        if (a > 1) {
+            let b = +a - 1;
+            $(this).closest('.cartcalc').find('input').val(b);
+        } else {
+            $(this).closest('.cartcalc').find('input').val(a);
+        }
+    });
+    $('.cartcalc .ccalc-plus').click(function() {
+        let a = $(this).closest('.cartcalc').find('input').val();
+        let b = +a + 1;
+        $(this).closest('.cartcalc').find('input').val(b);
+    });
+}
