@@ -1,0 +1,36 @@
+.modal {
+    &-dialog {
+        background: #FFFFFF;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 715px;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 87px;
+        background: #FECF3D;
+        border-radius: 50px 50px 0px 0px;
+        padding: 28px 60px;
+    }
+    &__title {
+        font-size: 25px;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+    &__content {
+        padding: 30px 60px;
+    }
+}
+
+.modal-city {
+    &__title {
+        font-size: 25px;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+    &__btn {
+        margin-top: 25px;
+    }
+}
