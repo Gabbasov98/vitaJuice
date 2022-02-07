@@ -1,0 +1,12 @@
+.page-top {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background: #6B9D52;
+}
+.page-top__title {
+  font-size: 80px;
+  line-height: 96px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
