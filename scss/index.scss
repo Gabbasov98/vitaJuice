@@ -1,0 +1,104 @@
+.main {
+    &__item {
+        padding: 118px 0;
+        background-size: cover;
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-left {
+            max-width: 800px;
+            img {
+                width: 100%;
+            }
+        }
+        &-right {
+            max-width: 485px;
+            margin-left: 100px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__slider {
+        position: relative;
+        &-nav {
+            position: absolute;
+            bottom: 55px;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-next,
+        &-prev {
+            position: static;
+            margin-top: 0;
+            &:after {
+                display: none;
+            }
+        }
+        &-pag {
+            position: static;
+            margin: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #FFFFFF;
+            opacity: 1;
+            margin: 0 25px;
+            &-active {
+                background: #FECF3D;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        .container {
+            padding: 0 28px;
+        }
+        &__item {
+            padding: 20px 0;
+            &-right {
+                margin-left: 50px;
+            }
+        }
+        &__slider {
+            &-nav {
+                bottom: 10px;
+            }
+            &-pag {
+                margin: 0 8px;
+            }
+            &-prev,
+            &-next {
+                width: 8px;
+                height: 13px;
+                svg {
+                    width: 8px;
+                    height: auto;
+                }
+            }
+            .swiper-pagination-bullet {
+                margin: 0 8px;
+                width: 4px;
+                height: 4px;
+                &-active {
+                    width: 7px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+}
