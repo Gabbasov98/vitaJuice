@@ -1,5 +1,4 @@
 .franchise {
-    padding-top: 50px;
     &__inner {
         display: flex;
         align-items: center;
@@ -7,6 +6,7 @@
     &__right {
         max-width: 780px;
         flex-shrink: 0;
+        padding: 50px 0;
     }
     &__left {
         max-width: 1077px;
@@ -41,7 +41,6 @@
 
 @media screen and (max-width: 1420px) {
     .franchise {
-        padding-bottom: 50px;
         &__right {
             max-width: 500px;
         }
@@ -62,12 +61,14 @@
             display: block;
         }
         &__left {
-            max-width: 100%;
+            max-width: unset;
+            width: calc(100% + 30px);
             margin-bottom: 25px;
-            margin-left: -10px;
+            margin-left: -15px;
         }
         &__right {
             max-width: 100%;
+            padding-top: 0;
         }
         &__text {
             font-size: 18px;

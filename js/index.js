@@ -81,6 +81,10 @@ $(document).ready(function() {
     $(".cart__form-info").click(function() {
         $(".cart__form-hint").toggleClass("cart__form-hint--active")
     })
+
+    $(".lk__form-info").click(function() {
+        $(".lk__form-hint").toggleClass("lk__form-hint--active")
+    })
 })
 
 function cartCalc() {

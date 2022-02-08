@@ -169,9 +169,10 @@
                 <div class='container'>
                     <form class='reg__inner'>
                         <div class="reg__grid">
-                            <fieldset class='reg__form-group form-group'>
+                            <fieldset class='reg__form-group form-group--error form-group'>
                                 <label>Улица</label>
                                 <input type='text' />
+                                <span class="form-group__error">Пожалуйста введите улицу</span>
                             </fieldset>
                             <fieldset class='reg__form-group form-group'>
                                 <label>Подъезд</label>
@@ -198,6 +199,12 @@
                             <div class="reg__text-title">Комметарий к заказу </div>
                             <textarea></textarea>
                             <button class="reg__text-btn btn btn-yellow">сохранить</button>
+                        </div>
+                        <div class="reg__text reg__text--error border-t border-b">
+                            <div class="reg__text-title">Комметарий к заказу </div>
+                            <textarea></textarea>
+                            <span class="form-group__error">Пожалуйста введите тест комментария</span>
+                            <button disabled class="reg__text-btn btn btn-yellow">сохранить</button>
                         </div>
                         <button class="reg__btn btn btn-yellow">оплата</button>
                     </form>

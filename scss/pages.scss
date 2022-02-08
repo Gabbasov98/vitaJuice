@@ -1,0 +1,206 @@
+.reg {
+    padding: 47px 0 54px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px 150px;
+        @media screen and (max-width: 1820px) {
+            gap: 8px 25px;
+        }
+        @media screen and (max-width: 1420px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__form-group {
+        align-items: flex-end;
+        label {
+            width: 180px;
+        }
+        input {
+            width: calc(100% - 180px);
+        }
+        .form-group__error {
+            padding-left: 180px;
+        }
+        @media screen and (max-width: 992px) {
+            label {
+                width: 90px;
+            }
+            input {
+                width: calc(100% - 90px);
+            }
+            .form-group__error {
+                padding-left: 0px;
+            }
+        }
+    }
+    &__text {
+        margin-top: 42px;
+        padding: 50px 0;
+        position: relative;
+        &-title {
+            font-size: 40px;
+            line-height: 120%;
+        }
+        textarea {
+            background: #F1F1F1;
+            border-radius: 50px;
+            margin-top: 20px;
+            width: 600px;
+            min-height: 228px;
+            resize: none;
+            border: none;
+        }
+        &-btn {
+            height: 52px;
+            margin-top: 20px;
+            padding: 0 35px;
+        }
+        .form-group__error {
+            position: static;
+            padding-left: 0;
+        }
+        &--error {
+            .form-group__error {
+                display: block;
+            }
+        }
+    }
+    &__btn {
+        height: 52px;
+        padding: 0 52px;
+        margin: 54px auto 0;
+    }
+}
+
+.lk {
+    padding: 43px 0 54px;
+    &__inputs {
+        max-width: 770px;
+    }
+    &__form {
+        &-hint {
+            position: absolute;
+            left: 100%;
+            bottom: 100%;
+            transform: translate(0, 50px);
+            width: 210px;
+            display: none;
+            &--active {
+                display: block;
+            }
+            svg {
+                width: 100%;
+                height: auto;
+            }
+            @media screen and (max-width: 1100px) {
+                width: 160px;
+            }
+            @media screen and (max-width: 992px) {
+                left: 0;
+            }
+        }
+        &-info {
+            position: absolute;
+            right: 0;
+            bottom: 25px;
+        }
+        &-group {
+            margin-bottom: 25px;
+            label {
+                width: 355px;
+                font-size: 40px;
+            }
+            input {
+                width: calc(100% - 355px);
+                height: 50px;
+            }
+            .form-group__error {
+                padding-left: 355px;
+            }
+            @media screen and (max-width: 992px) {
+                label {
+                    width: 100px;
+                    font-size: 20px;
+                }
+                input {
+                    width: calc(100% - 100px);
+                }
+                .form-group__error {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding-left: 355px;
+        display: flex;
+        align-items: center;
+    }
+    &__save,
+    &__logout {
+        width: 182px;
+        height: 52px;
+        padding: 0;
+    }
+    &__logout {
+        margin-left: 300px;
+        @media screen and (max-width: 1200px) {
+            margin-left: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .reg {
+        &__text {
+            margin-top: 40px;
+            padding-top: 45px;
+            &-title {
+                font-size: 20px;
+                text-align: center;
+            }
+            textarea {
+                margin-top: 25px;
+                width: 100%;
+                min-height: 300px;
+            }
+            &-btn {
+                margin: 30px auto 0;
+            }
+        }
+        &__btn {
+            margin-top: 52px;
+        }
+    }
+    .lk {
+        &__form {
+            &-group {
+                input {
+                    height: 30px;
+                }
+            }
+            &-info {
+                bottom: 23px;
+                svg {
+                    width: 30px;
+                    height: auto;
+                }
+            }
+        }
+        &__bottom {
+            display: block;
+            padding-left: 0;
+        }
+        &__save,
+        &__logout {
+            margin: 30px auto 0;
+        }
+        &__save {
+            margin-top: 0;
+        }
+    }
+}
