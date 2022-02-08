@@ -16,8 +16,32 @@ function mainSlider() {
     })
 }
 
+function hitSlider() {
+    var swiper = new Swiper('.hits .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.hits .swiper-button-next',
+            prevEl: '.hits .swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        }
+    })
+}
+
 $(document).ready(function() {
     mainSlider()
+    hitSlider()
     cartCalc()
 
     $(".header__burger").click(function() {
@@ -43,6 +67,20 @@ $(document).ready(function() {
         (this).swiper.autoplay.start();
     });
 
+    $(".card__favourite").click(function() {
+        $(this).toggleClass("card__favourite--active")
+    })
+
+    $(".product__favourite").click(function() {
+        $(this).toggleClass("product__favourite--active")
+    })
+    $(".card__btn").click(function() {
+        $("#modalProduct").modal('show')
+    })
+
+    $(".cart__form-info").click(function() {
+        $(".cart__form-hint").toggleClass("cart__form-hint--active")
+    })
 })
 
 function cartCalc() {
