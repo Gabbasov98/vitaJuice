@@ -70,6 +70,7 @@
     display: flex;
     align-items: flex-end;
     position: relative;
+    margin-bottom: 20px;
     label {
         margin-bottom: 0;
         width: 200px;
@@ -220,6 +221,18 @@ textarea {
                 display: none;
                 &--active {
                     display: block;
+                }
+                &--small {
+                    font-size: 16px !important;
+                    line-height: 19px;
+                    display: block;
+                    &:first-child {
+                        margin-right: auto;
+                    }
+                    &:last-child {
+                        margin-left: auto;
+                        text-align: center;
+                    }
                 }
             }
         }

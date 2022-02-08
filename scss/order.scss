@@ -14,17 +14,11 @@
         align-items: center;
         margin-bottom: 15px;
     }
-    &__desc {
-        font-size: 40px;
-        line-height: 48px;
-        text-transform: uppercase;
-        color: #2B2A29;
-    }
+    &__desc,
     &__number {
         font-size: 40px;
-        line-height: 48px;
+        line-height: 120%;
         text-transform: uppercase;
-        color: #2B2A29;
     }
     &__group {
         display: flex;
@@ -49,7 +43,7 @@
             background-position: left -3px bottom;
             background-size: auto 8px;
             background-repeat: repeat-x;
-            background-image: url(../img/order__line.png);
+            background-image: url(../img/border-input.png);
         }
     }
     &__delivery {
@@ -63,5 +57,102 @@
         padding-top: 20px;
         padding-bottom: 25px;
         background: #FECF3D;
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.order-form {
+    padding: 40px 0 50px;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        max-width: 560px;
+        margin-right: 150px;
+    }
+    &__right {
+        max-width: 205px;
+        padding-top: 10px;
+    }
+    &__code,
+    &__btn {
+        width: 182px;
+        height: 52px;
+        padding: 0;
+    }
+    &__hint {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 35px;
+    }
+    &__btn {
+        margin: 45px auto 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .order {
+        &__desc,
+        &__number {
+            font-size: 20px;
+        }
+        &__item {
+            background-size: auto 4px;
+            padding: 44px 0;
+        }
+        &__group {
+            width: 100%;
+            label {
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 120%;
+            }
+            input {
+                width: 60px;
+                margin-left: auto;
+                background-size: auto 4px;
+                background-position: left -6px bottom;
+                font-size: 18px;
+                padding-bottom: 0;
+            }
+        }
+        &__total {
+            padding: 15px 0 18px;
+        }
+    }
+    .order-form {
+        padding-top: 35px;
+        &__inner {
+            display: block;
+        }
+        &__left {
+            max-width: 100%;
+            margin-right: 0;
+        }
+        &__right {
+            max-width: 100%;
+            padding-top: 0;
+        }
+        &__code {
+            margin: 0 auto;
+        }
+        &__group {
+            label {
+                width: 105px;
+            }
+            input {
+                width: calc(100% - 105px);
+            }
+        }
+        &__hint {
+            margin-top: 16px;
+        }
+        &__btn {
+            margin-top: 25px;
+        }
     }
 }

@@ -85,6 +85,11 @@ $(document).ready(function() {
     $(".lk__form-info").click(function() {
         $(".lk__form-hint").toggleClass("lk__form-hint--active")
     })
+
+    $(".history__item-btn").click(function() {
+        $(".history__item-btn").toggleClass("history__item-btn--active")
+        $(this).parents(".history__item-show").siblings(".history__item-hidden").slideToggle()
+    })
 })
 
 function cartCalc() {

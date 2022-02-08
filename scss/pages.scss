@@ -154,6 +154,85 @@
     }
 }
 
+.history {
+    padding: 20px 0 54px;
+    &__item {
+        margin-bottom: 20px;
+        &-show {
+            display: flex;
+            position: relative;
+            padding: 23px 0;
+        }
+        &-col {
+            &:nth-child(1) {
+                width: 440px;
+                flex-shrink: 0;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 540px;
+                flex-shrink: 0.5;
+                flex-grow: 1;
+            }
+            &:nth-child(4) {
+                width: 245px;
+                flex-shrink: 0;
+            }
+        }
+        &-text {
+            font-size: 40px;
+            line-height: 120%;
+        }
+        &-btn,
+        &-repeat {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-left: 15px;
+            }
+            &--active {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+            &:hover {
+                color: #FECF3D;
+                path {
+                    stroke: #FECF3D;
+                }
+            }
+        }
+        &-hidden {
+            margin-top: 40px;
+            display: none;
+        }
+        &-order {
+            display: flex;
+            align-items: center;
+            padding: 0 245px 0 440px;
+            &-col {
+                width: 540px;
+                flex-shrink: 0.5;
+                flex-grow: 1;
+                font-size: 40px;
+                line-height: 120%;
+                color: #D9DADA;
+            }
+        }
+    }
+    &__buttons {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 245px 0 440px;
+    }
+    &__btn {
+        width: 182px;
+        height: 52px;
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .reg {
         &__text {
@@ -201,6 +280,77 @@
         }
         &__save {
             margin-top: 0;
+        }
+    }
+    .history {
+        padding-top: 15px;
+        &__item {
+            margin-bottom: 15px;
+            &-show {
+                padding: 10px 0;
+                justify-content: space-between;
+            }
+            &-col {
+                flex-shrink: 0 !important;
+                flex-grow: 0 !important;
+                width: 25% !important;
+                padding-right: 5px;
+                @media screen and (max-width: 380px) {
+                    &:nth-child(1) {
+                        text-align: center;
+                    }
+                }
+            }
+            &-hidden {
+                padding: 0;
+                margin-top: 8px;
+            }
+            &-text {
+                font-size: 16px;
+            }
+            &-btn,
+            &-repeat {
+                svg {
+                    width: 10px;
+                    height: auto;
+                    margin-left: 5px;
+                }
+                @media screen and (max-width: 380px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    svg {
+                        margin: 3px 0 0 0;
+                    }
+                }
+            }
+            &-order {
+                padding: 0;
+                justify-content: center;
+                margin-top: 3px;
+                &-col {
+                    font-size: 16px;
+                    line-height: 19px;
+                    flex-shrink: 0 !important;
+                    flex-grow: 0 !important;
+                    width: 25% !important;
+                    padding-right: 5px;
+                }
+            }
+        }
+        &__buttons {
+            padding: 0;
+            display: block;
+            margin-top: 0;
+            .history__item-order-col {
+                width: 100% !important;
+            }
+        }
+        &__btn {
+            margin: 30px auto 0;
         }
     }
 }

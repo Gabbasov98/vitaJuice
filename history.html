@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    <title>оплата</title>
+    <title>История заказов</title>
 </head>
 
 <body>
@@ -156,68 +156,190 @@
                     <div class='page-top__inner'>
                         <div class="page-top__steps">
                             <div class="page-top__step">
-                                <h2 class="page-top__step-title">корзина</h2>
-                                <h2 class="page-top__step-title">оформление</h2>
-                                <h2 class="page-top__step-title page-top__step-title--active">оплата</h2>
+                                <h2 class="page-top__step-title page-top__step-title--small">личный кабинет</h2>
+                                <h2 class="page-top__step-title page-top__step-title--active page-top__step-title--small">история заказов</h2>
+                                <h2 class="page-top__step-title page-top__step-title--small">баланс 300</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="order">
-                <div class="container">
-                    <div class="order__inner">
-                        <div class="order__item">
-                            <div class="order__sum">
-                                <span class="order__desc">сумма заказа</span>
-                                <span class="order__number">1900₽</span>
+            <section class='history'>
+                <div class='container'>
+                    <div class='history__items'>
+                        <div class="history__item">
+                            <div class="history__item-show border-b">
+                                <div class="history__item-col">
+                                    <div class="history__item-text">14 апреля</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <div class="history__item-text">2345₽</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-btn history__item-text">
+                                        <span>состав</span>
+                                        <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2065 36.5718C17.0787 36.557 14.5153 35.2182 12.8972 32.1474L3.30981 13.9515C-0.209392 7.27279 2.78211 2.38439 9.68423 2.34536L20.2065 2.28613L30.7287 2.34536C37.6308 2.38439 40.6223 7.27279 37.1031 13.9515L27.5157 32.1474C25.8976 35.2182 23.3342 36.557 20.2065 36.5718V36.5718Z" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-repeat history__item-text">
+                                        <span>повторить</span>
+                                        <svg width="30" height="37" viewBox="0 0 30 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.0299 34.2335C15.1259 37.6261 6.7925 34.7508 3.41713 27.8114C0.0417698 20.8719 2.90243 12.4958 9.80646 9.10312C16.7105 5.71043 25.0439 8.58576 28.4193 15.5252L16.6813 15.6942" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M28.4196 15.5249L26.0293 1.9541" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <fieldset class="order__group">
-                                <label>Списать бонусов</label>
-                                <input type="text" placeholder="300">
-                                <span class="form-group__error">300</span>
-                            </fieldset>
+                            <div class="history__item-hidden">
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1000₽</div>
+                                    <div class="history__item-order-col">Сок</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1005₽</div>
+                                    <div class="history__item-order-col">Сок 2</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">340₽</div>
+                                    <div class="history__item-order-col">Батончик</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="order__delivery">
-                            <span class="order__desc">Доставка</span>
-                            <span class="order__number">90₽</span>
+                        <div class="history__item">
+                            <div class="history__item-show border-b">
+                                <div class="history__item-col">
+                                    <div class="history__item-text">14 апреля</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <div class="history__item-text">2345₽</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-btn history__item-text">
+                                        <span>состав</span>
+                                        <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2065 36.5718C17.0787 36.557 14.5153 35.2182 12.8972 32.1474L3.30981 13.9515C-0.209392 7.27279 2.78211 2.38439 9.68423 2.34536L20.2065 2.28613L30.7287 2.34536C37.6308 2.38439 40.6223 7.27279 37.1031 13.9515L27.5157 32.1474C25.8976 35.2182 23.3342 36.557 20.2065 36.5718V36.5718Z" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-repeat history__item-text">
+                                        <span>повторить</span>
+                                        <svg width="30" height="37" viewBox="0 0 30 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.0299 34.2335C15.1259 37.6261 6.7925 34.7508 3.41713 27.8114C0.0417698 20.8719 2.90243 12.4958 9.80646 9.10312C16.7105 5.71043 25.0439 8.58576 28.4193 15.5252L16.6813 15.6942" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M28.4196 15.5249L26.0293 1.9541" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="history__item-hidden">
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1000₽</div>
+                                    <div class="history__item-order-col">Сок</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1005₽</div>
+                                    <div class="history__item-order-col">Сок 2</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">340₽</div>
+                                    <div class="history__item-order-col">Батончик</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history__item">
+                            <div class="history__item-show border-b">
+                                <div class="history__item-col">
+                                    <div class="history__item-text">14 апреля</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <div class="history__item-text">2345₽</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-btn history__item-text">
+                                        <span>состав</span>
+                                        <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2065 36.5718C17.0787 36.557 14.5153 35.2182 12.8972 32.1474L3.30981 13.9515C-0.209392 7.27279 2.78211 2.38439 9.68423 2.34536L20.2065 2.28613L30.7287 2.34536C37.6308 2.38439 40.6223 7.27279 37.1031 13.9515L27.5157 32.1474C25.8976 35.2182 23.3342 36.557 20.2065 36.5718V36.5718Z" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-repeat history__item-text">
+                                        <span>повторить</span>
+                                        <svg width="30" height="37" viewBox="0 0 30 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.0299 34.2335C15.1259 37.6261 6.7925 34.7508 3.41713 27.8114C0.0417698 20.8719 2.90243 12.4958 9.80646 9.10312C16.7105 5.71043 25.0439 8.58576 28.4193 15.5252L16.6813 15.6942" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M28.4196 15.5249L26.0293 1.9541" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="history__item-hidden">
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1000₽</div>
+                                    <div class="history__item-order-col">Сок</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1005₽</div>
+                                    <div class="history__item-order-col">Сок 2</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">340₽</div>
+                                    <div class="history__item-order-col">Батончик</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history__item">
+                            <div class="history__item-show border-b">
+                                <div class="history__item-col">
+                                    <div class="history__item-text">14 апреля</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <div class="history__item-text">2345₽</div>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-btn history__item-text">
+                                        <span>состав</span>
+                                        <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2065 36.5718C17.0787 36.557 14.5153 35.2182 12.8972 32.1474L3.30981 13.9515C-0.209392 7.27279 2.78211 2.38439 9.68423 2.34536L20.2065 2.28613L30.7287 2.34536C37.6308 2.38439 40.6223 7.27279 37.1031 13.9515L27.5157 32.1474C25.8976 35.2182 23.3342 36.557 20.2065 36.5718V36.5718Z" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="history__item-col">
+                                    <button class="history__item-repeat history__item-text">
+                                        <span>повторить</span>
+                                        <svg width="30" height="37" viewBox="0 0 30 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.0299 34.2335C15.1259 37.6261 6.7925 34.7508 3.41713 27.8114C0.0417698 20.8719 2.90243 12.4958 9.80646 9.10312C16.7105 5.71043 25.0439 8.58576 28.4193 15.5252L16.6813 15.6942" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M28.4196 15.5249L26.0293 1.9541" stroke="#2B2A29" stroke-width="3" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="history__item-hidden">
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1000₽</div>
+                                    <div class="history__item-order-col">Сок</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">1005₽</div>
+                                    <div class="history__item-order-col">Сок 2</div>
+                                </div>
+                                <div class="history__item-order">
+                                    <div class="history__item-order-col">340₽</div>
+                                    <div class="history__item-order-col">Батончик</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="order__total">
-                    <div class="container">
-                        <div class="order__total-inner">
-                            <span class="order__desc">итого к оплате</span>
-                            <span class="order__number">1690₽</span>
+                    <div class="history__buttons">
+                        <div class="history__item-order-col">
+                            <button class="history__btn btn btn-yellow">сохранить</button>
                         </div>
-                    </div>
-                </div>
-                <div class="order-form">
-                    <div class="container">
-                        <div class="order-form__inner">
-                            <div class="order-form__left">
-                                <fieldset class='order-form__group form-group--error form-group'>
-                                    <label>Телефон</label>
-                                    <input type='tel' />
-                                    <span class="form-group__error">Пожалуйста введите телефон</span>
-                                </fieldset>
-                                <fieldset class='order-form__group form-group'>
-                                    <label>Имя</label>
-                                    <input type='text' />
-                                </fieldset>
-                                <fieldset class='order-form__group form-group'>
-                                    <label>Код из sms</label>
-                                    <input type='text' />
-                                </fieldset>
-                            </div>
-                            <div class="order-form__right">
-                                <button class="order-form__code btn btn-yellow">выслать код</button>
-                                <div class="order-form__hint">Продолжая Вы соглашаетесь с ползовательским соглашением и политикой обработки персональных данных</div>
-                            </div>
+                        <div class="history__item-order-col">
+                            <button class="history__btn btn btn-yellow">выйти</button>
                         </div>
-                        <button class="order-form__btn btn btn-yellow">оплатить</button>
-                        <button disabled class="order-form__btn btn btn-yellow">оплатить</button>
                     </div>
                 </div>
             </section>
