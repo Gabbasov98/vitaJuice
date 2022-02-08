@@ -1,0 +1,67 @@
+.order {
+    &__item {
+        background-color: transparent;
+        background-position: left -12px bottom;
+        background-size: auto 8px;
+        background-repeat: repeat-x;
+        background-image: url(../img/border-input.png);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__sum {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__desc {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #2B2A29;
+    }
+    &__number {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #2B2A29;
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        width: 482px;
+        label {
+            font-size: 40px;
+            line-height: 48px;
+            color: #2B2A29;
+            margin-right: 30px;
+        }
+        input {
+            width: calc(100% - 340px);
+            font-size: 25px;
+            line-height: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 10px;
+            border: none;
+            background-color: transparent;
+            background-position: left -3px bottom;
+            background-size: auto 8px;
+            background-repeat: repeat-x;
+            background-image: url(../img/order__line.png);
+        }
+    }
+    &__delivery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__total {
+        padding-top: 20px;
+        padding-bottom: 25px;
+        background: #FECF3D;
+    }
+}

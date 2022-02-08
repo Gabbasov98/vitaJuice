@@ -8,7 +8,8 @@
   height: 8px;
   background-size: auto 100%;
   background-repeat: repeat-x;
-  background-image: url(../img//border.png); }
+  background-position: left -12px top;
+  background-image: url(../img/border-input.png); }
   @media screen and (max-width: 992px) {
     .border-b:before {
       height: 4px;
@@ -24,8 +25,8 @@
   height: 8px;
   background-size: auto 100%;
   background-repeat: repeat-x;
-  background-image: url(../img//border.png);
-  background-position: center; }
+  background-position: left -12px top;
+  background-image: url(../img/border-input.png); }
   @media screen and (max-width: 992px) {
     .border-t:after {
       height: 4px;
@@ -48,10 +49,15 @@
   .btn-yellow:hover {
     background: #2B2A29;
     color: #fff; }
+  .btn-yellow:disabled {
+    background: #D9DADA !important;
+    color: #2B2A29;
+    cursor: not-allowed; }
 
 .form-group {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+  position: relative; }
   .form-group label {
     margin-bottom: 0;
     width: 200px;
@@ -69,6 +75,7 @@
     min-height: 100%;
     width: calc(100% - 200px);
     border: none;
+    background-color: transparent;
     background-position: left -12px bottom;
     background-size: auto 8px;
     background-repeat: repeat-x;
@@ -82,7 +89,34 @@
         background-size: auto 4px;
         padding-bottom: 5px;
         height: 25px;
-        width: calc(100% - 90px); } }
+        width: calc(100% - 90px);
+        margin-bottom: 6px;
+        font-size: 20px; } }
+  .form-group--error .form-group__error {
+    display: block; }
+  .form-group__error {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 2px;
+    font-size: 20px;
+    color: #D40000;
+    left: 0;
+    top: 100%;
+    padding-left: 200px; }
+    @media screen and (max-width: 992px) {
+      .form-group__error {
+        padding-left: 0; } }
+
+textarea {
+  font-size: 25px;
+  line-height: 120%;
+  padding: 23px 30px;
+  color: #2B2A29; }
+  @media screen and (max-width: 992px) {
+    textarea {
+      font-size: 20px;
+      padding: 25px; } }
 
 .cartcalc {
   display: flex;
@@ -132,14 +166,20 @@
       color: #A8C599; }
       .page-top__step-title--active {
         color: #FFFFFF; }
+      .page-top__step-title--small {
+        font-size: 50px !important; }
     @media screen and (max-width: 1820px) {
       .page-top__step {
         padding-left: 180px; }
         .page-top__step-title {
-          font-size: 60px; } }
+          font-size: 60px; }
+          .page-top__step-title--small {
+            font-size: 40px !important; } }
     @media screen and (max-width: 1420px) {
       .page-top__step-title {
-        font-size: 40px; } }
+        font-size: 40px; }
+        .page-top__step-title--small {
+          font-size: 30px !important; } }
     @media screen and (max-width: 992px) {
       .page-top__step {
         justify-content: center;
