@@ -1,0 +1,43 @@
+.reg {
+  padding: 47px 0 54px; }
+  .reg__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px 150px; }
+    @media screen and (max-width: 1820px) {
+      .reg__grid {
+        gap: 8px 25px; } }
+    @media screen and (max-width: 1420px) {
+      .reg__grid {
+        grid-template-columns: 1fr 1fr; } }
+  .reg__form-group {
+    align-items: flex-end; }
+    .reg__form-group label {
+      width: 180px; }
+    .reg__form-group input {
+      width: calc(100% - 180px); }
+  .reg__text {
+    margin-top: 52px;
+    padding: 50px 0;
+    position: relative; }
+    .reg__text-title {
+      font-size: 40px;
+      line-height: 120%; }
+    .reg__text textarea {
+      background: #F1F1F1;
+      border-radius: 50px;
+      margin-top: 20px;
+      width: 600px;
+      min-height: 228px;
+      resize: none;
+      border: none; }
+    .reg__text-btn {
+      height: 52px;
+      margin-top: 20px;
+      padding: 0 35px; }
+  .reg__btn {
+    height: 52px;
+    padding: 0 52px;
+    margin: 54px auto 0; }
+
+/*# sourceMappingURL=reg.css.map */

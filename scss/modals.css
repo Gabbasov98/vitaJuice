@@ -172,6 +172,33 @@
     line-height: 120%;
     text-transform: uppercase; }
 
+.modal-product .modal-dialog {
+  width: 1370px; }
+  @media screen and (max-width: 1400px) {
+    .modal-product .modal-dialog {
+      width: calc(100% - 20px); } }
+.modal-product .product__inner {
+  padding: 50px;
+  position: relative; }
+  @media screen and (max-width: 992px) {
+    .modal-product .product__inner {
+      padding-left: 20px;
+      padding-right: 20px; } }
+.modal-product .product__right {
+  margin-left: 55px; }
+  @media screen and (max-width: 992px) {
+    .modal-product .product__right {
+      margin-left: 0; } }
+.modal-product__close {
+  position: absolute;
+  top: 50px;
+  right: 50px; }
+  @media screen and (max-width: 992px) {
+    .modal-product__close {
+      right: 20px; } }
+  .modal-product__close:hover path {
+    fill: #FECF3D; }
+
 @media screen and (max-width: 768px) {
   .modal {
     padding-right: 0 !important; }

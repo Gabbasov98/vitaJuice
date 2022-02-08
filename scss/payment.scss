@@ -1,0 +1,77 @@
+.payment {
+    &__item {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        &:not(:last-child) {
+            background-position: left bottom;
+            background-size: auto 8px;
+            background-repeat: repeat-x;
+            background-image: url(../img/border.png);
+        }
+        &-desc {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            svg {
+                margin-left: 28px;
+            }
+        }
+    }
+    &__desc {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #2B2A29;
+    }
+    &__text {
+        font-size: 25px;
+        line-height: 30px;
+        color: #2B2A29;
+    }
+    &__accrued {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+    &__sum {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #2B2A29;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .payment {
+        &__item:not(:last-child) {
+            background-size: auto 4px;
+        }
+        &__item-desc {
+            svg {
+                margin-left: 15px;
+                width: 17px;
+                height: 17px;
+            }
+        }
+        &__desc {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__sum {
+            margin-left: 10px;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #2B2A29;
+        }
+    }
+}

@@ -1,17 +1,3 @@
-.page-top__step {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.page-top-step__title {
-  font-weight: normal;
-  font-size: 80px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: #A8C599; }
-  .page-top-step__title--active {
-    color: #FFFFFF; }
-
 .cart__item {
   align-items: center;
   margin-bottom: 0;
@@ -52,15 +38,23 @@
   padding-top: 55px;
   padding-bottom: 60px;
   margin-bottom: 0; }
+  .cart__form-hint {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 430px;
+    margin-left: 30px;
+    display: none; }
+    .cart__form-hint--active {
+      display: block; }
   .cart__form-item {
     position: relative;
     width: 292px; }
   .cart__form-input {
+    padding-right: 55px;
     width: 100%;
     height: 40px;
     font-size: 25px;
     line-height: 30px;
-    color: #D9DADA;
     text-align: center;
     border: none;
     padding-bottom: 12px;
@@ -68,7 +62,7 @@
     background-size: auto 8px;
     background-repeat: repeat-x;
     background-image: url(../img/border.png); }
-  .cart__form-img {
+  .cart__form-info {
     position: absolute;
     right: 0;
     bottom: 14px; }
@@ -116,9 +110,6 @@
   .cart__content {
     margin-left: 100px; } }
 @media screen and (max-width: 1420px) {
-  .page-top-step__title {
-    font-size: 40px; }
-
   .cart__item {
     padding-left: 100px;
     padding-right: 100px; } }
@@ -133,14 +124,6 @@
   .cart__price {
     font-size: 30px; } }
 @media screen and (max-width: 992px) {
-  .page-top__step {
-    justify-content: center; }
-
-  .page-top-step__title {
-    display: none; }
-    .page-top-step__title--active {
-      display: block; }
-
   .cart__item {
     padding-left: 0px;
     padding-right: 0px;
@@ -181,10 +164,11 @@
     height: 30px;
     font-size: 18px;
     line-height: 22px;
-    background-size: auto 5px; }
-  .cart__form-img {
+    background-size: auto 5px;
+    padding-right: 25px; }
+  .cart__form-info svg {
     width: 22px;
-    height: 22px; }
+    height: auto; }
   .cart__form {
     display: block;
     margin-left: auto;
@@ -193,6 +177,10 @@
     background-size: auto 4px;
     padding-top: 35px;
     padding-bottom: 30px; }
+    .cart__form-hint {
+      padding: 0 30px;
+      margin: 18px auto 0;
+      text-align: left; }
   .cart__form-btn {
     margin-left: auto;
     margin-right: auto;
