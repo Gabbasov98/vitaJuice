@@ -40,6 +40,20 @@ function hitSlider() {
 }
 
 $(document).ready(function() {
+    $.fn.setCursorPosition = function(pos) {
+        if ($(this).get(0).setSelectionRange) {
+            $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+            var range = $(this).get(0).createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', pos);
+            range.moveStart('character', pos);
+            range.select();
+        }
+    };
+    $("input[type='tel']").click(function() {
+        $(this).setCursorPosition(2);
+    }).mask("+79999999999", { placeholder: '+7          ' });
     mainSlider()
     hitSlider()
     cartCalc()
@@ -74,7 +88,11 @@ $(document).ready(function() {
     $(".product__favourite").click(function() {
         $(this).toggleClass("product__favourite--active")
     })
-    $(".card__btn").click(function() {
+    $(".card__img").click(function() {
+        $("#modalProduct").modal('show')
+    })
+
+    $(".card__title").click(function() {
         $("#modalProduct").modal('show')
     })
 
@@ -87,7 +105,7 @@ $(document).ready(function() {
     })
 
     $(".history__item-btn").click(function() {
-        $(".history__item-btn").toggleClass("history__item-btn--active")
+        $(this).toggleClass("history__item-btn--active")
         $(this).parents(".history__item-show").siblings(".history__item-hidden").slideToggle()
     })
 })

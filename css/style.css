@@ -343,7 +343,7 @@ textarea {
 }
 .cartcalc button {
   width: 12px;
-  height: 100%;
+  height: 90%;
 }
 
 .page-top {
@@ -397,11 +397,19 @@ textarea {
   }
 }
 @media screen and (max-width: 1420px) {
+  .page-top__step {
+    padding-left: 110px;
+  }
   .page-top__step-title {
     font-size: 40px;
   }
   .page-top__step-title--small {
     font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .page-top__step {
+    padding-left: 85px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -458,6 +466,8 @@ textarea {
 }
 .card__img {
   height: 275px;
+  display: block;
+  cursor: pointer;
 }
 .card__juices {
   max-height: 100%;
@@ -468,9 +478,12 @@ textarea {
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
-  color: #2B2A29;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0 10px;
+  display: block;
+}
+.card__title:hover {
+  color: #FECF3D;
+  cursor: pointer;
 }
 .card__weight {
   font-size: 25px;
@@ -764,18 +777,28 @@ textarea {
   }
 }
 @media screen and (max-width: 1420px) {
-  .header__bottom {
-    display: block;
+  .header__link {
+    font-size: 16px;
   }
-  .header__menu1 {
-    justify-content: space-between;
+  .header__logo {
+    width: 100px;
+    bottom: unset;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  .header__menu2 {
-    justify-content: space-between;
-    margin-top: 20px;
+  .header__inner {
+    padding-left: 110px;
   }
-  .header__menu2-item {
-    margin-left: 0;
+}
+@media screen and (max-width: 1200px) {
+  .header__link {
+    font-size: 14px;
+  }
+  .header__logo {
+    width: 80px;
+  }
+  .header__inner {
+    padding-left: 85px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -785,6 +808,7 @@ textarea {
   .header__logo {
     position: static;
     width: 45px;
+    transform: translate(0, 0);
   }
   .header__menu2 {
     display: none;
@@ -842,6 +866,9 @@ textarea {
   }
   .header__burger--active span:nth-child(3) {
     transform: translateY(-13px) rotate(45deg);
+  }
+  .header__link {
+    font-size: 20px;
   }
   .header__login, .header__cart {
     margin-left: 28px;
@@ -939,7 +966,7 @@ textarea {
   bottom: 55px;
   left: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1110,8 +1137,9 @@ textarea {
   border-radius: 60px;
   overflow: hidden;
 }
-.delivery__map img {
+.delivery__map .maps-block {
   width: 100%;
+  height: 400px;
 }
 .delivery__variants {
   margin-top: 35px;
@@ -1407,17 +1435,9 @@ textarea {
     font-size: 30px;
     text-align: center;
   }
-  .delivery__map {
+  .delivery__map .maps-block {
     height: 400px;
-    position: relative;
-  }
-  .delivery__map img {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
   }
   .delivery__min {
     margin-top: 34px;
@@ -1460,6 +1480,9 @@ textarea {
 }
 .footer__link:not(:last-child) {
   margin-bottom: 45px;
+}
+.footer__link:hover {
+  color: #FECF3D;
 }
 .footer-bottom {
   background: #6B9D52;
@@ -1622,6 +1645,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
+  margin-top: 18px;
 }
 .modal-city__item {
   font-size: 20px;
@@ -1682,7 +1706,7 @@ textarea {
 .modal-cart .modal-dialog {
   position: absolute;
   width: 520px;
-  margin: 153px 0 0 0;
+  margin: 60px 0 0 0;
   right: 0;
 }
 @media screen and (max-width: 768px) {
@@ -2954,6 +2978,77 @@ textarea {
   }
   .order-form__btn {
     margin-top: 25px;
+  }
+}
+.payment__item {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.payment__item:not(:last-child) {
+  background-position: left bottom;
+  background-size: auto 8px;
+  background-repeat: repeat-x;
+  background-image: url(../img/border.png);
+}
+.payment__item-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.payment__item-desc svg {
+  margin-left: 28px;
+}
+.payment__desc {
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #2B2A29;
+}
+.payment__text {
+  font-size: 25px;
+  line-height: 30px;
+  color: #2B2A29;
+}
+.payment__accrued {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment__price {
+  display: flex;
+  align-items: center;
+}
+.payment__sum {
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #2B2A29;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .payment__item:not(:last-child) {
+    background-size: auto 4px;
+  }
+  .payment__item-desc svg {
+    margin-left: 15px;
+    width: 17px;
+    height: 17px;
+  }
+  .payment__desc {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .payment__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .payment__sum {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #2B2A29;
   }
 }
 .wrapper {

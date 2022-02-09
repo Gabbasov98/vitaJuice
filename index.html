@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title>Главная</title>
 </head>
@@ -285,12 +283,10 @@
                             <div class='swiper-wrapper'>
                                 <div class='swiper-slide'>
                                     <div class="card">
-                                        <a href="">
-                                            <div class="card__img">
-                                                <img class="card__juices" src="img/juices.png" alt="">
-                                            </div>
-                                            <h4 class="card__title">ласси</h4>
-                                        </a>
+                                        <div class="card__img">
+                                            <img class="card__juices" src="img/juices.png" alt="">
+                                        </div>
+                                        <h4 class="card__title">ласси</h4>
                                         <div class="card__badge">
                                             <div class="card__badge-num">+20 б</div>
                                             <img src="img/bonus.svg" alt="" class="card__badge-img">
@@ -309,12 +305,10 @@
                                 </div>
                                 <div class='swiper-slide'>
                                     <div class="card">
-                                        <a href="">
-                                            <div class="card__img">
-                                                <img class="card__juices" src="img/juices2.png" alt="">
-                                            </div>
-                                            <h4 class="card__title">микс</h4>
-                                        </a>
+                                        <div class="card__img">
+                                            <img class="card__juices" src="img/juices2.png" alt="">
+                                        </div>
+                                        <h4 class="card__title">микс</h4>
                                         <span class="card__weight">400₽ мл</span>
                                         <div class="card__info">
                                             <span class="card__price">375₽</span>
@@ -329,12 +323,10 @@
                                 </div>
                                 <div class='swiper-slide'>
                                     <div class="card">
-                                        <a href="">
-                                            <div class="card__img">
-                                                <img class="card__juices" src="img/juices3.png" alt="">
-                                            </div>
-                                            <h4 class="card__title">боул</h4>
-                                        </a>
+                                        <div class="card__img">
+                                            <img class="card__juices" src="img/juices3.png" alt="">
+                                        </div>
+                                        <h4 class="card__title">боул</h4>
                                         <span class="card__weight">450 мл</span>
                                         <div class="card__info">
                                             <span class="card__price">375₽</span>
@@ -349,12 +341,10 @@
                                 </div>
                                 <div class='swiper-slide'>
                                     <div class="card">
-                                        <a href="">
-                                            <div class="card__img">
-                                                <img class="card__juices" src="img/juices4.png" alt="">
-                                            </div>
-                                            <h4 class="card__title">апельсиновый сок</h4>
-                                        </a>
+                                        <div class="card__img">
+                                            <img class="card__juices" src="img/juices4.png" alt="">
+                                        </div>
+                                        <h4 class="card__title">апельсиновый сок</h4>
                                         <span class="card__weight">500 мл</span>
                                         <div class="card__info">
                                             <span class="card__price">400₽</span>
@@ -405,7 +395,10 @@
                             </div>
                         </div>
                         <div class="delivery__map">
-                            <img src="img/map.jpg" alt="">
+                            <!-- <img src="img/map.jpg" alt=""> -->
+                            <div class="maps-block">
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dee5d5ce5114262d713526e7226b1fbe72ff19c3237e143c1dc7120e38db9ca&amp;width=100%25&amp;height=595&amp;lang=ru_RU&amp;scroll=true"></script>
+                            </div>
                         </div>
                         <div class="delivery__variants">
                             <div class="delivery__title">варианты оплаты</div>
@@ -897,11 +890,10 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/swiper.js "></script>
-    <script src="js/jquery.fancybox.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/index.js "></script>
 </body>
 

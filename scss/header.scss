@@ -239,18 +239,31 @@
 
 @media screen and (max-width: 1420px) {
     .header {
-        &__bottom {
-            display: block;
+        &__link {
+            font-size: 16px;
         }
-        &__menu1 {
-            justify-content: space-between;
+        &__logo {
+            width: 100px;
+            bottom: unset;
+            top: 50%;
+            transform: translateY(-50%);
         }
-        &__menu2 {
-            justify-content: space-between;
-            margin-top: 20px;
-            &-item {
-                margin-left: 0;
-            }
+        &__inner {
+            padding-left: 110px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__link {
+            font-size: 14px;
+        }
+        &__logo {
+            width: 80px;
+        }
+        &__inner {
+            padding-left: 85px;
         }
     }
 }
@@ -263,6 +276,7 @@
         &__logo {
             position: static;
             width: 45px;
+            transform: translate(0, 0);
         }
         &__menu2 {
             display: none;
@@ -326,6 +340,9 @@
                     }
                 }
             }
+        }
+        &__link {
+            font-size: 20px;
         }
         &__login,
         &__cart {

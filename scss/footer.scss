@@ -28,6 +28,9 @@
         &:not(:last-child) {
             margin-bottom: 45px;
         }
+        &:hover {
+            color: #FECF3D;
+        }
     }
     &-bottom {
         background: #6B9D52;
