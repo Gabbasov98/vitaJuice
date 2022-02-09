@@ -52,8 +52,8 @@ $(document).ready(function() {
         }
     };
     $("input[type='tel']").click(function() {
-        $(this).setCursorPosition(2);
-    }).mask("+79999999999", { placeholder: '+7          ' });
+        $(this).setCursorPosition(4);
+    }).mask("+7 (999) 999-99-99", { placeholder: '+7                ' });
     mainSlider()
     hitSlider()
     cartCalc()
