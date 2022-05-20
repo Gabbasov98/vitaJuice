@@ -21,31 +21,4 @@
 .franchise__btn {
   height: 52px; }
 
-@media screen and (max-width: 1820px) {
-  .franchise__right {
-    max-width: 700px; } }
-@media screen and (max-width: 1420px) {
-  .franchise__right {
-    max-width: 500px; } }
-@media screen and (max-width: 1200px) {
-  .franchise__right {
-    max-width: 400px; } }
-@media screen and (max-width: 1420px) {
-  .franchise__inner {
-    display: block; }
-  .franchise__left {
-    max-width: unset;
-    width: calc(100% + 30px);
-    margin-bottom: 25px;
-    margin-left: -15px; }
-  .franchise__right {
-    max-width: 100%;
-    padding-top: 0; }
-  .franchise__text {
-    font-size: 18px;
-    line-height: 22px; }
-  .franchise__btn {
-    margin-right: auto;
-    margin-left: auto; } }
-
 /*# sourceMappingURL=franchise.css.map */

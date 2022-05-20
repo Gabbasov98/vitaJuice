@@ -45,6 +45,9 @@
     transition: all .0s; }
     .header__menu1-item:not(:last-child) {
       margin-right: 35px; }
+    .header__menu1-item a {
+      display: block;
+      height: 100%; }
     .header__menu1-item span {
       margin: 0;
       width: 100%;
@@ -97,6 +100,8 @@
     display: flex; }
     .header__menu2-item {
       margin-left: 55px; }
+      .header__menu2-item a {
+        display: block; }
       .header__menu2-item span {
         margin: 0;
         width: 100%;
@@ -125,132 +130,5 @@
     margin-left: 80px; }
   .header__mob {
     display: none; }
-
-@media screen and (max-width: 1820px) {
-  .header__inner {
-    padding-left: 180px; }
-  .header__menu1-item:not(:last-child) {
-    margin-right: 15px; }
-  .header__menu2-item {
-    margin-left: 15px; } }
-@media screen and (max-width: 1420px) {
-  .header__link {
-    font-size: 16px; }
-  .header__logo {
-    width: 100px;
-    bottom: unset;
-    top: 50%;
-    transform: translateY(-50%); }
-  .header__inner {
-    padding-left: 110px; } }
-@media screen and (max-width: 1200px) {
-  .header__link {
-    font-size: 14px; }
-  .header__logo {
-    width: 80px; }
-  .header__inner {
-    padding-left: 85px; } }
-@media screen and (max-width: 992px) {
-  .header__inner {
-    padding-left: 0; }
-  .header__logo {
-    position: static;
-    width: 45px;
-    transform: translate(0, 0); }
-  .header__menu2 {
-    display: none; }
-  .header__top {
-    justify-content: flex-end; }
-    .header__top-right {
-      flex-grow: 0; }
-  .header__mob {
-    display: flex;
-    align-items: center;
-    margin-right: auto; }
-    .header__mob-menu {
-      margin-left: 25px; }
-      .header__mob-menu:hover {
-        color: #FECF3D; }
-  .header__burger {
-    display: flex;
-    align-items: center;
-    width: 38px;
-    height: 31px;
-    position: relative; }
-    .header__burger:hover span {
-      background: #FECF3D; }
-    .header__burger span {
-      display: block;
-      width: 100%;
-      height: 5px;
-      border-radius: 5px;
-      background: #2B2A29;
-      transition: all .3s; }
-      .header__burger span:nth-child(1) {
-        top: 0;
-        position: absolute;
-        left: 0; }
-      .header__burger span:nth-child(3) {
-        bottom: 0;
-        position: absolute;
-        left: 0; }
-    .header__burger--active span:nth-child(1) {
-      transform: translateY(13px) rotate(-45deg); }
-    .header__burger--active span:nth-child(2) {
-      transform: scale(0); }
-    .header__burger--active span:nth-child(3) {
-      transform: translateY(-13px) rotate(45deg); }
-  .header__link {
-    font-size: 20px; }
-  .header__login, .header__cart {
-    margin-left: 28px; }
-    .header__login span, .header__cart span {
-      display: none; }
-  .header__city span, .header__city-arrow {
-    display: none; }
-  .header__city svg, .header__cart svg, .header__login svg {
-    width: auto;
-    height: 30px; }
-  .header__menu1, .header__menu2 {
-    transition: all .3s;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: #FFFFFF;
-    z-index: 10; }
-    .header__menu1--active, .header__menu2--active {
-      left: 0; }
-    .header__menu1-top, .header__menu2-top {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #FECF3D;
-      height: 65px;
-      padding: 0 28px; }
-    .header__menu1-wrap, .header__menu2-wrap {
-      padding: 0 0 0 28px;
-      flex-wrap: wrap;
-      justify-content: center; }
-    .header__menu1-close, .header__menu2-close {
-      display: unset; }
-    .header__menu1-item, .header__menu2-item {
-      margin-top: 24px;
-      margin-right: 28px !important; }
-  .header__menu2 {
-    display: block;
-    margin-top: 0; }
-    .header__menu2-top {
-      margin-bottom: 25px; }
-    .header__menu2-item {
-      margin: 13px 0 0 0 !important;
-      padding: 0 28px;
-      display: block; }
-      .header__menu2-item i {
-        display: none; }
-      .header__menu2-item:hover {
-        color: #FECF3D; } }
 
 /*# sourceMappingURL=header.css.map */

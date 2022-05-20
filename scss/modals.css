@@ -38,7 +38,8 @@
 .modal-city__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px; }
+  gap: 8px;
+  margin-top: 18px; }
 .modal-city__item {
   font-size: 20px;
   line-height: 120%;
@@ -83,7 +84,7 @@
 .modal-cart .modal-dialog {
   position: absolute;
   width: 520px;
-  margin: 153px 0 0 0;
+  margin: 60px 0 0 0;
   right: 0; }
   @media screen and (max-width: 768px) {
     .modal-cart .modal-dialog {
@@ -198,83 +199,5 @@
       right: 20px; } }
   .modal-product__close:hover path {
     fill: #FECF3D; }
-
-@media screen and (max-width: 768px) {
-  .modal {
-    padding-right: 0 !important; }
-    .modal-dialog {
-      border-radius: 0px;
-      width: 100% !important;
-      margin: 0;
-      min-height: 100vh; }
-    .modal__top {
-      border-radius: 0px;
-      min-height: 64px;
-      padding: 16px 30px; }
-    .modal__title {
-      font-size: 20px; }
-      .modal__title svg {
-        display: unset; }
-    .modal__content {
-      padding-left: 28px;
-      padding-right: 28px; }
-
-  .modal-city__title {
-    font-size: 20px; }
-  .modal-city__btn {
-    margin-top: 16px; }
-  .modal-city__bottom {
-    margin-top: 24px; }
-  .modal-city__items {
-    margin-top: 12px;
-    grid-template-columns: 1fr;
-    gap: 6px; }
-  .modal-city__item {
-    font-size: 18px; }
-
-  .modal-login__form-group {
-    margin-bottom: 20px; }
-  .modal-login__form-btn {
-    margin: 25px auto 0; }
-
-  .modal-cart .container {
-    padding: 0; }
-  .modal-cart__items {
-    max-height: unset;
-    overflow-y: unset;
-    padding-right: 0; }
-  .modal-cart__content {
-    padding-top: 25px; }
-  .modal-cart__item {
-    padding-bottom: 29px;
-    background-size: auto 4px; }
-    .modal-cart__item-img {
-      width: 90px;
-      margin-right: 5px; }
-    .modal-cart__item-title {
-      font-size: 16px; }
-    .modal-cart__item-weight {
-      font-size: 16px;
-      margin-top: 3px; }
-    .modal-cart__item-category {
-      font-size: 14px;
-      margin-top: 2px; }
-    .modal-cart__item-price {
-      font-size: 18px; }
-    .modal-cart__item-calc {
-      width: 88px;
-      height: 30px; }
-    .modal-cart__item-delete svg {
-      width: 19px;
-      height: auto; }
-  .modal-cart__gift-title {
-    font-size: 18px; }
-    .modal-cart__gift-title svg {
-      width: 15px;
-      margin-left: 28px; }
-  .modal-cart__sum {
-    padding: 16px 28px; }
-    .modal-cart__sum-title {
-      font-size: 18px; } }
 
 /*# sourceMappingURL=modals.css.map */

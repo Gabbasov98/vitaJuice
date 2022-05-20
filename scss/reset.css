@@ -84,7 +84,6 @@ body {
   font-family: "Bahnschrift", sans-serif;
   font-weight: 400;
   height: 100%;
-  overflow-x: hidden;
   color: #2B2A29; }
   body.fixed-body {
     overflow-y: hidden; }

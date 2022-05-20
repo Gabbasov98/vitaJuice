@@ -357,180 +357,178 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .pay {
-        &__bottom {
-            display: block;
-        }
-        &__btn {
-            margin: 15px 0 0 0;
-        }
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .main {
-        .container {
-            padding: 0 28px;
-        }
-        &__item {
-            padding: 20px 0;
-            &-right {
-                margin-left: 50px;
-            }
-        }
-        &__slider {
-            &-nav {
-                bottom: 10px;
-            }
-            &-pag {
-                margin: 0 8px;
-            }
-            &-prev,
-            &-next {
-                width: 8px;
-                height: 13px;
-                svg {
-                    width: 8px;
-                    height: auto;
-                }
-            }
-            .swiper-pagination-bullet {
-                margin: 0 8px;
-                width: 4px;
-                height: 4px;
-                &-active {
-                    width: 7px;
-                    height: 7px;
-                }
-            }
-        }
-    }
-    .our-project {
-        height: unset;
-        &__items {
-            padding: 25px 0;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            @media screen and (max-width: 768px) {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        &__item {
-            &-title {
-                font-size: 28px;
-                margin-top: 0;
-            }
-        }
-    }
-    .delivery {
-        padding-top: 44px;
-    }
-    .pay {
-        &__inner {
-            display: block;
-        }
-        &__card {
-            margin: 0 auto;
-            width: unset;
-            max-width: 520px;
-            padding: 26px 0;
-            &-top {
-                padding: 0 30px;
-            }
-            &-logo {
-                img {
-                    width: 43px;
-                    margin-right: 8px;
-                }
-            }
-            &-title {
-                font-size: 20px;
-            }
-            &-balance,
-            &-price,
-            &-who,
-            &-name {
-                font-size: 18px;
-            }
-            &-price {
-                margin-top: 4px;
-            }
-            &-info {
-                margin-top: 13px;
-                padding: 0 30px;
-            }
-            &-code {
-                margin-top: 95px;
-                max-width: 200px;
-                padding: 5px;
-            }
-        }
-        &__right {
-            margin-top: 40px;
-            text-align: center;
-            margin-left: 0;
-        }
-        &__title {
-            font-size: 30px;
-        }
-        &__items,
-        &__bottom {
-            margin-top: 35px;
-        }
-        &__item {
-            display: block;
-            margin-top: 25px;
-            &-icon {
-                margin: 0 auto 14px;
-            }
-            &-title {
-                font-size: 20px;
-            }
-        }
-        &__btn {
-            margin: 27px auto 0;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hits {
-        .container {
-            padding: 0;
-        }
-    }
-    .delivery {
-        background: linear-gradient(294.47deg, #FECF3D -11.2%, #6B9D52 56.44%);
-        &__title {
-            font-size: 30px;
-            text-align: center;
-        }
-        &__map {
-            .maps-block {
-                height: 400px;
-                width: 100%;
-            }
-        }
-        &__min {
-            margin-top: 34px;
-            display: block;
-            &-item {
-                &:not(:last-child) {
-                    margin-bottom: 24px;
-                }
-            }
-        }
-        &__variants {
-            &-wrap {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-        }
-        &__variant {
-            &-desc {
-                max-width: 300px;
-            }
-        }
-    }
-}
+// @media screen and (max-width: 1200px) {
+//     .pay {
+//         &__bottom {
+//             display: block;
+//         }
+//         &__btn {
+//             margin: 15px 0 0 0;
+//         }
+//     }
+// }
+// @media screen and (max-width: 992px) {
+//     .main {
+//         .container {
+//             padding: 0 28px;
+//         }
+//         &__item {
+//             padding: 20px 0;
+//             &-right {
+//                 margin-left: 50px;
+//             }
+//         }
+//         &__slider {
+//             &-nav {
+//                 bottom: 10px;
+//             }
+//             &-pag {
+//                 margin: 0 8px;
+//             }
+//             &-prev,
+//             &-next {
+//                 width: 8px;
+//                 height: 13px;
+//                 svg {
+//                     width: 8px;
+//                     height: auto;
+//                 }
+//             }
+//             .swiper-pagination-bullet {
+//                 margin: 0 8px;
+//                 width: 4px;
+//                 height: 4px;
+//                 &-active {
+//                     width: 7px;
+//                     height: 7px;
+//                 }
+//             }
+//         }
+//     }
+//     .our-project {
+//         height: unset;
+//         &__items {
+//             padding: 25px 0;
+//             grid-template-columns: 1fr 1fr 1fr;
+//             gap: 20px;
+//             @media screen and (max-width: 768px) {
+//                 grid-template-columns: 1fr 1fr;
+//             }
+//         }
+//         &__item {
+//             &-title {
+//                 font-size: 28px;
+//                 margin-top: 0;
+//             }
+//         }
+//     }
+//     .delivery {
+//         padding-top: 44px;
+//     }
+//     .pay {
+//         &__inner {
+//             display: block;
+//         }
+//         &__card {
+//             margin: 0 auto;
+//             width: unset;
+//             max-width: 520px;
+//             padding: 26px 0;
+//             &-top {
+//                 padding: 0 30px;
+//             }
+//             &-logo {
+//                 img {
+//                     width: 43px;
+//                     margin-right: 8px;
+//                 }
+//             }
+//             &-title {
+//                 font-size: 20px;
+//             }
+//             &-balance,
+//             &-price,
+//             &-who,
+//             &-name {
+//                 font-size: 18px;
+//             }
+//             &-price {
+//                 margin-top: 4px;
+//             }
+//             &-info {
+//                 margin-top: 13px;
+//                 padding: 0 30px;
+//             }
+//             &-code {
+//                 margin-top: 95px;
+//                 max-width: 200px;
+//                 padding: 5px;
+//             }
+//         }
+//         &__right {
+//             margin-top: 40px;
+//             text-align: center;
+//             margin-left: 0;
+//         }
+//         &__title {
+//             font-size: 30px;
+//         }
+//         &__items,
+//         &__bottom {
+//             margin-top: 35px;
+//         }
+//         &__item {
+//             display: block;
+//             margin-top: 25px;
+//             &-icon {
+//                 margin: 0 auto 14px;
+//             }
+//             &-title {
+//                 font-size: 20px;
+//             }
+//         }
+//         &__btn {
+//             margin: 27px auto 0;
+//         }
+//     }
+// }
+// @media screen and (max-width: 768px) {
+//     .hits {
+//         .container {
+//             padding: 0;
+//         }
+//     }
+//     .delivery {
+//         background: linear-gradient(294.47deg, #FECF3D -11.2%, #6B9D52 56.44%);
+//         &__title {
+//             font-size: 30px;
+//             text-align: center;
+//         }
+//         &__map {
+//             .maps-block {
+//                 height: 400px;
+//                 width: 100%;
+//             }
+//         }
+//         &__min {
+//             margin-top: 34px;
+//             display: block;
+//             &-item {
+//                 &:not(:last-child) {
+//                     margin-bottom: 24px;
+//                 }
+//             }
+//         }
+//         &__variants {
+//             &-wrap {
+//                 grid-template-columns: 1fr;
+//                 gap: 24px;
+//             }
+//         }
+//         &__variant {
+//             &-desc {
+//                 max-width: 300px;
+//             }
+//         }
+//     }
+// }

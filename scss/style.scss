@@ -17,6 +17,7 @@
     flex-direction: column;
     min-height: 100%;
     width: 100%;
+    min-width: 1920px;
 }
 
 .content {
@@ -29,15 +30,15 @@
     @media screen and (min-width: 768px) {
         width: 100%;
     }
-    @media screen and (min-width: 1420px) {
-        width: 1380px;
-    }
-    @media screen and (min-width: 1820px) {
-        width: 1800px;
-    }
-    @media screen and (max-width: 768px) {
-        padding: 0 10px;
-    }
+    // @media screen and (min-width: 1420px) {
+    //     width: 1380px;
+    // }
+    // @media screen and (min-width: 1820px) {
+    //     width: 1800px;
+    // }
+    // @media screen and (max-width: 768px) {
+    //     padding: 0 10px;
+    // }
 }
 
 .mt-0 {

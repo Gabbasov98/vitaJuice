@@ -35,24 +35,4 @@
   color: #2B2A29;
   margin-left: 15px; }
 
-@media screen and (max-width: 992px) {
-  .payment__item:not(:last-child) {
-    background-size: auto 4px; }
-  .payment__item-desc svg {
-    margin-left: 15px;
-    width: 17px;
-    height: 17px; }
-  .payment__desc {
-    font-size: 20px;
-    line-height: 24px; }
-  .payment__text {
-    font-size: 18px;
-    line-height: 22px; }
-  .payment__sum {
-    margin-left: 10px;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #2B2A29; } }
-
 /*# sourceMappingURL=payment.css.map */

@@ -5,61 +5,73 @@
   background-repeat: repeat-x;
   background-image: url(../img/border-input.png);
   padding-top: 50px;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 .order__sum {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
-}
-.order__desc {
+  margin-bottom: 15px; }
+.order__desc, .order__number {
   font-size: 40px;
-  line-height: 48px;
-  text-transform: uppercase;
-  color: #2B2A29;
-}
-.order__number {
-  font-size: 40px;
-  line-height: 48px;
-  text-transform: uppercase;
-  color: #2B2A29;
-}
+  line-height: 120%;
+  text-transform: uppercase; }
 .order__group {
   display: flex;
   align-items: center;
   margin-left: auto;
-  width: 482px;
-}
-.order__group label {
-  font-size: 40px;
-  line-height: 48px;
-  color: #2B2A29;
-  margin-right: 30px;
-}
-.order__group input {
-  width: calc(100% - 340px);
-  font-size: 25px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 10px;
-  border: none;
-  background-color: transparent;
-  background-position: left -3px bottom;
-  background-size: auto 8px;
-  background-repeat: repeat-x;
-  background-image: url(../img/order__line.png);
-}
+  width: 482px; }
+  .order__group label {
+    font-size: 40px;
+    line-height: 48px;
+    color: #2B2A29;
+    margin-right: 30px; }
+  .order__group input {
+    width: calc(100% - 340px);
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    background-position: left -3px bottom;
+    background-size: auto 8px;
+    background-repeat: repeat-x;
+    background-image: url(../img/border-input.png); }
 .order__delivery {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
-}
+  padding-bottom: 40px; }
 .order__total {
   padding-top: 20px;
   padding-bottom: 25px;
-  background: #FECF3D;
-}
+  background: #FECF3D; }
+  .order__total-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.order-form {
+  padding: 40px 0 50px; }
+  .order-form__inner {
+    display: flex; }
+  .order-form__left {
+    max-width: 560px;
+    margin-right: 150px; }
+  .order-form__right {
+    max-width: 205px;
+    padding-top: 10px; }
+  .order-form__code, .order-form__btn {
+    width: 182px;
+    height: 52px;
+    padding: 0; }
+  .order-form__hint {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 35px; }
+  .order-form__btn {
+    margin: 45px auto 0; }
+
+/*# sourceMappingURL=order.css.map */

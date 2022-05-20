@@ -31,52 +31,49 @@
     }
 }
 
-@media screen and (max-width: 1820px) {
-    .franchise {
-        &__right {
-            max-width: 700px;
-        }
-    }
-}
-
-@media screen and (max-width: 1420px) {
-    .franchise {
-        &__right {
-            max-width: 500px;
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .franchise {
-        &__right {
-            max-width: 400px;
-        }
-    }
-}
-
-@media screen and (max-width: 1420px) {
-    .franchise {
-        &__inner {
-            display: block;
-        }
-        &__left {
-            max-width: unset;
-            width: calc(100% + 30px);
-            margin-bottom: 25px;
-            margin-left: -15px;
-        }
-        &__right {
-            max-width: 100%;
-            padding-top: 0;
-        }
-        &__text {
-            font-size: 18px;
-            line-height: 22px;
-        }
-        &__btn {
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-}
+// @media screen and (max-width: 1820px) {
+//     .franchise {
+//         &__right {
+//             max-width: 700px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 1420px) {
+//     .franchise {
+//         &__right {
+//             max-width: 500px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 1200px) {
+//     .franchise {
+//         &__right {
+//             max-width: 400px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 1420px) {
+//     .franchise {
+//         &__inner {
+//             display: block;
+//         }
+//         &__left {
+//             max-width: unset;
+//             width: calc(100% + 30px);
+//             margin-bottom: 25px;
+//             margin-left: -15px;
+//         }
+//         &__right {
+//             max-width: 100%;
+//             padding-top: 0;
+//         }
+//         &__text {
+//             font-size: 18px;
+//             line-height: 22px;
+//         }
+//         &__btn {
+//             margin-right: auto;
+//             margin-left: auto;
+//         }
+//     }
+// }

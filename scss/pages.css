@@ -115,35 +115,60 @@
       .lk__logout {
         margin-left: auto; } }
 
-@media screen and (max-width: 992px) {
-  .reg__text {
-    margin-top: 40px;
-    padding-top: 45px; }
-    .reg__text-title {
-      font-size: 20px;
-      text-align: center; }
-    .reg__text textarea {
-      margin-top: 25px;
-      width: 100%;
-      min-height: 300px; }
-    .reg__text-btn {
-      margin: 30px auto 0; }
-  .reg__btn {
-    margin-top: 52px; }
-
-  .lk__form-group input {
-    height: 30px; }
-  .lk__form-info {
-    bottom: 23px; }
-    .lk__form-info svg {
-      width: 30px;
-      height: auto; }
-  .lk__bottom {
-    display: block;
-    padding-left: 0; }
-  .lk__save, .lk__logout {
-    margin: 30px auto 0; }
-  .lk__save {
-    margin-top: 0; } }
+.history {
+  padding: 20px 0 54px; }
+  .history__item {
+    margin-bottom: 20px; }
+    .history__item-show {
+      display: flex;
+      position: relative;
+      padding: 23px 0; }
+    .history__item-col:nth-child(1) {
+      width: 440px;
+      flex-shrink: 0; }
+    .history__item-col:nth-child(2), .history__item-col:nth-child(3) {
+      width: 540px;
+      flex-shrink: 0.5;
+      flex-grow: 1; }
+    .history__item-col:nth-child(4) {
+      width: 245px;
+      flex-shrink: 0; }
+    .history__item-text {
+      font-size: 40px;
+      line-height: 120%; }
+    .history__item-btn, .history__item-repeat {
+      display: flex;
+      align-items: center; }
+      .history__item-btn svg, .history__item-repeat svg {
+        margin-left: 15px; }
+      .history__item-btn--active svg, .history__item-repeat--active svg {
+        transform: rotate(180deg); }
+      .history__item-btn:hover, .history__item-repeat:hover {
+        color: #FECF3D; }
+        .history__item-btn:hover path, .history__item-repeat:hover path {
+          stroke: #FECF3D; }
+    .history__item-hidden {
+      margin-top: 40px;
+      display: none; }
+    .history__item-order {
+      display: flex;
+      align-items: center;
+      padding: 0 245px 0 440px; }
+      .history__item-order-col {
+        width: 540px;
+        flex-shrink: 0.5;
+        flex-grow: 1;
+        font-size: 40px;
+        line-height: 120%;
+        color: #D9DADA; }
+  .history__buttons {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 245px 0 440px; }
+  .history__btn {
+    width: 182px;
+    height: 52px;
+    padding: 0; }
 
 /*# sourceMappingURL=pages.css.map */

@@ -94,65 +94,65 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    .order {
-        &__desc,
-        &__number {
-            font-size: 20px;
-        }
-        &__item {
-            background-size: auto 4px;
-            padding: 44px 0;
-        }
-        &__group {
-            width: 100%;
-            label {
-                font-size: 20px;
-                font-weight: normal;
-                line-height: 120%;
-            }
-            input {
-                width: 60px;
-                margin-left: auto;
-                background-size: auto 4px;
-                background-position: left -6px bottom;
-                font-size: 18px;
-                padding-bottom: 0;
-            }
-        }
-        &__total {
-            padding: 15px 0 18px;
-        }
-    }
-    .order-form {
-        padding-top: 35px;
-        &__inner {
-            display: block;
-        }
-        &__left {
-            max-width: 100%;
-            margin-right: 0;
-        }
-        &__right {
-            max-width: 100%;
-            padding-top: 0;
-        }
-        &__code {
-            margin: 0 auto;
-        }
-        &__group {
-            label {
-                width: 105px;
-            }
-            input {
-                width: calc(100% - 105px);
-            }
-        }
-        &__hint {
-            margin-top: 16px;
-        }
-        &__btn {
-            margin-top: 25px;
-        }
-    }
-}
+// @media screen and (max-width: 992px) {
+//     .order {
+//         &__desc,
+//         &__number {
+//             font-size: 20px;
+//         }
+//         &__item {
+//             background-size: auto 4px;
+//             padding: 44px 0;
+//         }
+//         &__group {
+//             width: 100%;
+//             label {
+//                 font-size: 20px;
+//                 font-weight: normal;
+//                 line-height: 120%;
+//             }
+//             input {
+//                 width: 60px;
+//                 margin-left: auto;
+//                 background-size: auto 4px;
+//                 background-position: left -6px bottom;
+//                 font-size: 18px;
+//                 padding-bottom: 0;
+//             }
+//         }
+//         &__total {
+//             padding: 15px 0 18px;
+//         }
+//     }
+//     .order-form {
+//         padding-top: 35px;
+//         &__inner {
+//             display: block;
+//         }
+//         &__left {
+//             max-width: 100%;
+//             margin-right: 0;
+//         }
+//         &__right {
+//             max-width: 100%;
+//             padding-top: 0;
+//         }
+//         &__code {
+//             margin: 0 auto;
+//         }
+//         &__group {
+//             label {
+//                 width: 105px;
+//             }
+//             input {
+//                 width: calc(100% - 105px);
+//             }
+//         }
+//         &__hint {
+//             margin-top: 16px;
+//         }
+//         &__btn {
+//             margin-top: 25px;
+//         }
+//     }
+// }

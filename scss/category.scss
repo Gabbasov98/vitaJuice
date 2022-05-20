@@ -8,33 +8,30 @@
     }
 }
 
-@media screen and (max-width: 1820px) {
-    .category {
-        &__items {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
-}
-
-@media screen and (max-width: 1420px) {
-    .category {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .category {
-        &__items {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .category {
-        &__items {
-            grid-template-columns: 1fr;
-        }
-    }
-}
+// @media screen and (max-width: 1820px) {
+//     .category {
+//         &__items {
+//             grid-template-columns: 1fr 1fr 1fr;
+//         }
+//     }
+// }
+// @media screen and (max-width: 1420px) {
+//     .category {
+//         padding-top: 50px;
+//         padding-bottom: 50px;
+//     }
+// }
+// @media screen and (max-width: 992px) {
+//     .category {
+//         &__items {
+//             grid-template-columns: 1fr 1fr;
+//         }
+//     }
+// }
+// @media screen and (max-width: 600px) {
+//     .category {
+//         &__items {
+//             grid-template-columns: 1fr;
+//         }
+//     }
+// }

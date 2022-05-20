@@ -46,32 +46,32 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    .payment {
-        &__item:not(:last-child) {
-            background-size: auto 4px;
-        }
-        &__item-desc {
-            svg {
-                margin-left: 15px;
-                width: 17px;
-                height: 17px;
-            }
-        }
-        &__desc {
-            font-size: 20px;
-            line-height: 24px;
-        }
-        &__text {
-            font-size: 18px;
-            line-height: 22px;
-        }
-        &__sum {
-            margin-left: 10px;
-            font-size: 20px;
-            line-height: 24px;
-            text-transform: uppercase;
-            color: #2B2A29;
-        }
-    }
-}
+// @media screen and (max-width: 992px) {
+//     .payment {
+//         &__item:not(:last-child) {
+//             background-size: auto 4px;
+//         }
+//         &__item-desc {
+//             svg {
+//                 margin-left: 15px;
+//                 width: 17px;
+//                 height: 17px;
+//             }
+//         }
+//         &__desc {
+//             font-size: 20px;
+//             line-height: 24px;
+//         }
+//         &__text {
+//             font-size: 18px;
+//             line-height: 22px;
+//         }
+//         &__sum {
+//             margin-left: 10px;
+//             font-size: 20px;
+//             line-height: 24px;
+//             text-transform: uppercase;
+//             color: #2B2A29;
+//         }
+//     }
+// }
