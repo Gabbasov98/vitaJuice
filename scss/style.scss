@@ -17,7 +17,6 @@
     flex-direction: column;
     min-height: 100%;
     width: 100%;
-    min-width: 1920px;
 }
 
 .content {
@@ -27,8 +26,12 @@
 }
 
 .container {
+    width: unset;
+}
+
+.container {
     @media screen and (min-width: 768px) {
-        width: 100%;
+        // width: 100%;
     }
     // @media screen and (min-width: 1420px) {
     //     width: 1380px;

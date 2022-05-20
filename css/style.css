@@ -1959,7 +1959,6 @@ textarea {
   flex-direction: column;
   min-height: 100%;
   width: 100%;
-  min-width: 1920px;
 }
 
 .content {
@@ -1968,10 +1967,8 @@ textarea {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-  }
+.container {
+  width: unset;
 }
 
 .mt-0 {
